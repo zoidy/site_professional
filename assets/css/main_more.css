@@ -29,3 +29,12 @@
 .publication .icon{
 	float:right;
 }
+
+/* styling for image/maps list */
+.mapdescription{
+	line-height:1.2;
+}
+.mapdescription .mapdescription_src{
+	font-size:80%;
+	color:#cccccc;
+}
