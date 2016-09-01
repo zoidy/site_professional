@@ -1,0 +1,13 @@
+.publication {
+	line-height:1.2;
+}
+
+.publication .journal{
+	font-style:italic;
+}
+
+.peerrev::after {
+	content:"\00b9";
+	font-style:italic;
+	color:#cccccc;
+}
