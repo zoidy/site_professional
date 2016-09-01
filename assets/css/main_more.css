@@ -1,3 +1,4 @@
+/* styling for publications list */
 .publication {
 	line-height:1.2;
 }
@@ -6,8 +7,25 @@
 	font-style:italic;
 }
 
+.publication .me{
+	font-weight:bold;
+}
+
 .peerrev::after {
 	content:"\00b9";
 	font-style:italic;
 	color:#cccccc;
+}
+
+.publication a{
+	text-decoration:none;
+	color:inherit;
+}
+
+.publication a:hover{
+	text-decoration:underline;
+}
+
+.publication .icon{
+	float:right;
 }
