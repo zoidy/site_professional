@@ -17,6 +17,54 @@
 	color:#cccccc;
 }
 
+.peerrev-poster::after{
+	content:"1,3";
+    vertical-align:super;
+	font-style:italic;
+    font-size:60%;
+	color:#cccccc;
+}
+
+.peerrev-presenter::after{
+	content:"1,2";
+    vertical-align:super;
+	font-style:italic;
+    font-size:60%;
+	color:#cccccc;
+}
+
+.peerrev-poster-presenter::after{
+	content:"1,2,3";
+    vertical-align:super;
+	font-style:italic;
+    font-size:60%;
+	color:#cccccc;
+}
+
+.poster-presenter::after{
+	content:"2,3";
+    vertical-align:super;
+	font-style:italic;
+    font-size:60%;
+	color:#cccccc;
+}
+
+.poster::after{
+	content:"2";
+    vertical-align:super;
+	font-style:italic;
+    font-size:60%;
+	color:#cccccc;
+}
+
+.presenter::after{
+	content:"3";
+    vertical-align:super;
+	font-style:italic;
+    font-size:60%;
+	color:#cccccc;
+}
+
 .publication a{
 	text-decoration:none;
 	color:inherit;
