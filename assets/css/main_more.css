@@ -12,57 +12,59 @@
 }
 
 .peerrev::after {
-	content:"\00b9";
+	content:"1";
+    vertical-align:super;
+    font-size:67%;
 	font-style:italic;
-	color:#cccccc;
+	color:#cc3300;
 }
 
 .peerrev-poster::after{
 	content:"1,3";
     vertical-align:super;
 	font-style:italic;
-    font-size:60%;
-	color:#cccccc;
+    font-size:67%;
+	color:#b3b3b3;
 }
 
 .peerrev-presenter::after{
 	content:"1,2";
     vertical-align:super;
 	font-style:italic;
-    font-size:60%;
-	color:#cccccc;
+    font-size:67%;
+	color:#cc3300;
 }
 
 .peerrev-poster-presenter::after{
 	content:"1,2,3";
     vertical-align:super;
 	font-style:italic;
-    font-size:60%;
-	color:#cccccc;
+    font-size:67%;
+	color:#cc3300;
 }
 
 .poster-presenter::after{
 	content:"2,3";
     vertical-align:super;
 	font-style:italic;
-    font-size:60%;
-	color:#cccccc;
+    font-size:67%;
+	color:#b3b3b3;
 }
 
 .poster::after{
 	content:"2";
     vertical-align:super;
 	font-style:italic;
-    font-size:60%;
-	color:#cccccc;
+    font-size:67%;
+	color:#b3b3b3;
 }
 
 .presenter::after{
 	content:"3";
     vertical-align:super;
 	font-style:italic;
-    font-size:60%;
-	color:#cccccc;
+    font-size:67%;
+	color:#b3b3b3;
 }
 
 .publication a{
@@ -84,5 +86,5 @@
 }
 .mapdescription .mapdescription_src{
 	font-size:80%;
-	color:#cccccc;
+	color:#b3b3b3;
 }
