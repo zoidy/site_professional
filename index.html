@@ -22,10 +22,18 @@
 
 				<!-- Nav http://fontawesome.io/cheatsheet/ -->
 					<nav id="nav">
-						<a href="#me" class="icon fa-home active"><span>Home</span></a>
-						<a href="#work" class="icon fa-edit"><span>Work</span></a>
-                        <a href="#about" class="icon fa-user"><span>About Me</span></a>
-						<a href="https://twitter.com/riosfrnd" target="_blank" class="icon fa-twitter"><span>Twitter</span></a>
+						<a href="#me" class="icon fa-home active" ga-on="click" ga-event-category="nav" ga-event-action="home">
+                            <span>Home</span>
+                        </a>
+						<a href="#work" class="icon fa-edit"  ga-on="click" ga-event-category="nav" ga-event-action="work">
+                            <span>Work</span>
+                        </a>
+                        <a href="#about" class="icon fa-user"  ga-on="click" ga-event-category="nav" ga-event-action="about">
+                            <span>About Me</span>
+                        </a>
+						<a href="https://twitter.com/riosfrnd" target="_blank" class="icon fa-twitter"  ga-on="click" ga-event-category="nav" ga-event-action="twitter">
+                            <span>Twitter</span>
+                        </a>
 					</nav>
 
 				<!-- Main -->
@@ -52,9 +60,21 @@
                                 Success = failures that you're comfortable with.
                                 </blockquote>
                                 <p style="text-align:center">
-                                    <a href="#pubs"><button class="btn-class" type="button">Publications <span class="icon fa-arrow-down"></span></button></a>
-                                    <a href="#conf"><button class="btn-class" type="button">Conferences <span class="icon fa-arrow-down"></span></button></a>
-                                    <a href="#viz"><button class="btn-class" type="button">Maps & Visualizations <span class="icon fa-arrow-down"></span></button></a>
+                                    <a href="#pubs">
+                                        <button class="btn-class" type="button"  ga-on="click" ga-event-category="buttons" ga-event-action="pubs">
+                                        Publications <span class="icon fa-arrow-down"></span>
+                                        </button>
+                                    </a>
+                                    <a href="#conf">
+                                        <button class="btn-class" type="button"  ga-on="click" ga-event-category="buttons" ga-event-action="conf">
+                                        Conferences <span class="icon fa-arrow-down"></span>
+                                        </button>
+                                    </a>
+                                    <a href="#viz">
+                                        <button class="btn-class" type="button"  ga-on="click" ga-event-category="buttons" ga-event-action="viz">
+                                        Maps & Visualizations <span class="icon fa-arrow-down"></span>
+                                        </button>
+                                    </a>
                                 </p>
 								<section>
 									<h3 id="pubs">Publications</h3>
@@ -62,11 +82,11 @@
 									<div class="row">
                                         <div class="publication 12u$">
 											<span class="me">Rios, F.</span>, 2016. Preserving and sharing software for transparent and reproducible research: A review. <span class="journal">Open Science Framework</span>. August 16. <a href="https://osf.io/d4kef" target="_blank">osf.io/d4kef</a>.
-											<a class="icon fa-external-link" target="_blank" href="https://osf.io/d4kef"></a>
+											<a class="icon fa-external-link" target="_blank" href="https://osf.io/d4kef"  ga-on="click" ga-event-category="links" ga-event-action="sw_pres_review"></a>
 										</div>
                                         <div class="publication 12u$">
 											<span class="me">Rios, F.</span>, 2016. The pathways of research software preservation: An educational and planning resource for service development.  <span class="journal">D-Lib Magazine 22</span>, 5/6 (Jul/Aug). <a href="http://www.dlib.org/dlib/july16/rios/07rios.html" target="_blank">doi:10.1045/july2016-rios.</a>
-											<a class="icon fa-file-pdf-o" target="_blank" href="docs/rios2016_dlib_pathways.pdf"></a>
+											<a class="icon fa-file-pdf-o" target="_blank" ga-on="click" ga-event-category="links" ga-event-action="pathways_dlib" href="docs/rios2016_dlib_pathways.pdf"></a>
 										</div>
 										<div class="publication peerrev 12u$">
 											<span class="me">Rios, J.F.</span> and Renschler, C.S., 2016. A new combined assessment of mixed uncertainty in spatial models: Conceptualization and implementation.
@@ -254,7 +274,7 @@
                                 <h3>Contact</h3>
                                 <p>
                                     You may contact me at
-                                    <button id="btnEmail" class="btn-class" type="button" onclick="email(true);">Click to see email</button>
+                                    <button id="btnEmail" class="btn-class" type="button" onclick="email(true);"  ga-on="click" ga-event-category="buttons" ga-event-action="see_email">Click to see email</button>
                                     or by social media.
                                     <script type="text/javascript"><!--
                                     //modified from http://www.mailtoencoder.com/# to show on click and to have a show parameter
@@ -293,6 +313,18 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+            
+            <script>
+                window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+                ga('create', 'UA-4065483-7', 'auto');
+                
+                ga('require', 'outboundLinkTracker');
+                ga('require', 'eventTracker');
+                
+                ga('send', 'pageview');
+            </script>
+            <script async src='https://www.google-analytics.com/analytics.js'></script>
+            <script async src='assets/js/autotrack.js'></script>
 
 	</body>
 </html>
