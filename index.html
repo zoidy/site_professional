@@ -14,9 +14,7 @@
 		<link rel="stylesheet" href="assets/css/main_more.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-        
-        <script src="https://use.fontawesome.com/706570aaa4.js"></script>
-        
+               
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
@@ -59,7 +57,7 @@
 								</header>
 								<a href="#work" ga-on="click" ga-event-category="nav" ga-event-action="main_page_chevron" class="jumplink pic">
 									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
-									<img src="images/resume_word_cloud.png" alt="Generated using http://wordcloud.cs.arizona.edu/cloud.html?id=6474" />
+									<img id="resume_word_cloud_png" src="" alt="Activities word cloud" /> <!--Generated using http://wordcloud.cs.arizona.edu/cloud.html?id=6474 -->
 								</a>
 							</article>
 
@@ -254,18 +252,18 @@
                                     <br>
 									<div class="row">
 										<div class="mapdescription 4u 12u$(mobile)">
-											<a href="https://www.dropbox.com/s/xyd1dr2aecu1icg/particle_tracks_small.mp4?dl=0" class="image fit" target="_blank" ga-on="click" ga-event-category="maps_viz" ga-event-action="particle_tracks"><img src="images/particle_tracks_thumb.jpg" alt=""></a> Flow lines (with velocity shown with color) from septic systems to a river, shown over a relief of the terrain. Created in ArcScene, Video is 3D capable. <span class="mapdescription_src">[From: ArcNLET project]</span>
+											<a href="https://www.dropbox.com/s/xyd1dr2aecu1icg/particle_tracks_small.mp4?dl=0" class="image fit" target="_blank" ga-on="click" ga-event-category="maps_viz" ga-event-action="particle_tracks"><img id="particle_tracks_thumb_jpg" src="" alt="Particle tracks"></a> Flow lines (with velocity shown with color) from septic systems to a river, shown over a relief of the terrain. Created in ArcScene, Video is 3D capable. <span class="mapdescription_src">[From: ArcNLET project]</span>
 										</div>
 										<div class="mapdescription 4u 12u$(mobile)">
-											<a href="images/naval_air_station.jpg" class="image fit" target="_blank"  ga-on="click" ga-event-category="maps_viz" ga-event-action="air_station"><img src="images/naval_air_station_thumb.jpg" alt=""></a>
+											<a href="images/naval_air_station.jpg" class="image fit" target="_blank"  ga-on="click" ga-event-category="maps_viz" ga-event-action="air_station"><img id="naval_air_station_thumb_jpg" src="" alt="Naval Air Station"></a>
                                             Map of Naval Air Station, Jacksonville, FL. <span class="mapdescription_src">[From: A GIS-based model for estimating nitrate fate and transport from septic systems in surficial aquifers. M.S. thesis]</span>
 										</div>
 										<div class="mapdescription 4u$ 12u$(mobile)">
-											<a href="images/mars.jpg" class="image fit" target="_blank"  ga-on="click" ga-event-category="maps_viz" ga-event-action="mars"><img src="images/mars_thumb.jpg" alt=""></a>
+											<a href="images/mars.jpg" class="image fit" target="_blank"  ga-on="click" ga-event-category="maps_viz" ga-event-action="mars"><img id="mars_thumb_jpg" src="" alt="Mars"></a>
                                             Map of an optimal path through Eberswalde Crater for a hypothetical Mars rover mission. Terrain is from the HiRISE camera with an elevation model overlain. <span class="mapdescription_src">[From: An unpublished class project (Landscape Modeling with GIS)]</span>
 										</div>
 										<div class="mapdescription 4u$ 12u$(mobile)">
-											<a href="http://www.dlib.org/dlib/july16/rios/rios-fig1-lg.png" class="image fit" target="_blank"  ga-on="click" ga-event-category="maps_viz" ga-event-action="pathways"><img src="images/thumb_pathways.jpg" alt=""></a>
+											<a href="http://www.dlib.org/dlib/july16/rios/rios-fig1-lg.png" class="image fit" target="_blank"  ga-on="click" ga-event-category="maps_viz" ga-event-action="pathways"><img id="thumb_pathways_jpg" src="" alt="Pathways"></a>
                                             The "pathways of research software preservation" - a condensed, bird's-eye view of different approaches to preserving research software. <span class="mapdescription_src">[From: The pathways of research software preservation: An educational and planning resource for service development]</span>
 										</div>
                                         <div>
@@ -327,6 +325,9 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
             
+			<script src="https://use.fontawesome.com/706570aaa4.js"></script>
+			<script src="images/images_base64.js"></script>
+			
             <script>
                 window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
                 ga('create', 'UA-4065483-7', 'auto');
